@@ -1,13 +1,15 @@
 import { Instagram as InstagramIcon } from "lucide-react";
 import { SectionReveal } from "./SectionReveal";
-import { PhotoPlaceholder } from "./PhotoPlaceholder";
+import { Photo } from "./Photo";
+import poltronaImg from "@/assets/isabela-poltrona.png";
 
 export function Instagram() {
   return (
     <SectionReveal className="bg-accent text-accent-foreground">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:py-20 grid gap-10 md:grid-cols-2 md:items-center">
-        <PhotoPlaceholder
-          label="Foto da psicóloga"
+        <Photo
+          src={poltronaImg}
+          alt="Isabela sentada na poltrona segurando um livro"
           aspect="aspect-square"
           className="max-w-sm mx-auto md:mx-0"
         />
