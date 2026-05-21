@@ -1,10 +1,11 @@
-import { Compass, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { BussolaIcon } from "./BussolaIcon";
 
 export function Footer({ whatsappUrl }: { whatsappUrl: string }) {
   return (
     <footer className="bg-secondary border-t border-border">
       <div className="mx-auto max-w-6xl px-4 py-14 flex flex-col items-center text-center gap-4">
-        <Compass className="w-10 h-10 text-primary" strokeWidth={1.25} />
+        <BussolaIcon className="w-12 h-12" />
         <div>
           <p className="font-display text-lg text-foreground">
             Psicóloga Isabela Pereira Unis da Costa
