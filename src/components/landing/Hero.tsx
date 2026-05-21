@@ -1,4 +1,5 @@
-import { PhotoPlaceholder } from "./PhotoPlaceholder";
+import { Photo } from "./Photo";
+import heroImg from "@/assets/isabela-hero.png";
 
 export function Hero({ whatsappUrl }: { whatsappUrl: string }) {
   return (
@@ -27,7 +28,7 @@ export function Hero({ whatsappUrl }: { whatsappUrl: string }) {
           </div>
         </div>
         <div className="order-1 md:order-2">
-          <PhotoPlaceholder label="Foto da psicóloga" aspect="aspect-[4/5]" />
+          <Photo src={heroImg} alt="Isabela Unis, psicóloga, sorrindo com uma xícara nas mãos" priority />
         </div>
       </div>
     </section>

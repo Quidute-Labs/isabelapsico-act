@@ -1,5 +1,6 @@
 import { SectionReveal } from "./SectionReveal";
-import { PhotoPlaceholder } from "./PhotoPlaceholder";
+import { Photo } from "./Photo";
+import livrosImg from "@/assets/isabela-livros.png";
 
 export function ComoFunciona() {
   return (
@@ -23,7 +24,7 @@ export function ComoFunciona() {
             a dia, mesmo quando surgem desafios, ansiedade ou inseguranças.
           </p>
         </div>
-        <PhotoPlaceholder label="Foto da psicóloga" aspect="aspect-[4/5]" />
+        <Photo src={livrosImg} alt="Isabela apoiada em uma pilha de livros de psicologia" />
       </div>
     </SectionReveal>
   );

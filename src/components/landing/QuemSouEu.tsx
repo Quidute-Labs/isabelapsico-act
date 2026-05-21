@@ -1,5 +1,6 @@
 import { SectionReveal } from "./SectionReveal";
-import { PhotoPlaceholder } from "./PhotoPlaceholder";
+import { Photo } from "./Photo";
+import retratoImg from "@/assets/isabela-retrato.png";
 
 export function QuemSouEu() {
   return (
@@ -23,7 +24,7 @@ export function QuemSouEu() {
           </p>
         </div>
         <div className="order-1 md:order-2">
-          <PhotoPlaceholder label="Foto da psicóloga" aspect="aspect-[4/5]" />
+          <Photo src={retratoImg} alt="Retrato de Isabela Unis sorrindo, com óculos" />
         </div>
       </div>
     </SectionReveal>

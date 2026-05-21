@@ -1,11 +1,12 @@
 import { SectionReveal } from "./SectionReveal";
-import { PhotoPlaceholder } from "./PhotoPlaceholder";
+import { Photo } from "./Photo";
+import consultorioImg from "@/assets/consultorio.png";
 
 export function Intro() {
   return (
     <SectionReveal className="bg-background">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:py-20 md:py-24 grid gap-10 md:grid-cols-2 md:items-center">
-        <PhotoPlaceholder label="Consultório" aspect="aspect-[4/5]" />
+        <Photo src={consultorioImg} alt="Consultório acolhedor com poltrona e mesa lateral" />
         <div>
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-foreground leading-snug">
             A maneira que lidamos com o sofrimento pode limitar nosso contato com o que é
