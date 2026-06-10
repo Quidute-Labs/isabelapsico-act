@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { Intro } from "@/components/landing/Intro";
@@ -11,11 +10,7 @@ import { WhatsAppFab } from "@/components/landing/WhatsAppFab";
 const WHATSAPP_NUMBER = "5500000000000"; // substituir pelo número real
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-function Index() {
+export default function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar whatsappUrl={WHATSAPP_URL} />
