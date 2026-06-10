@@ -10,6 +10,8 @@ import {
 
 import appCss from "../styles.css?url";
 
+const GTM_ID = "GTM-XXXXXXX"; // Substitua pelo seu ID do Google Tag Manager
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
