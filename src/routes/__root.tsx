@@ -1,16 +1,9 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import {
-  Outlet,
-  Link,
-  createRootRouteWithContext,
-  useRouter,
-  HeadContent,
-  Scripts,
-} from "@tanstack/react-router";
+import { Outlet, Link, createRootRouteWithContext, useRouter, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
 
-const GTM_ID = "GTM-XXXXXXX"; // Substitua pelo seu ID do Google Tag Manager
+const GTM_ID = "GTM-PXRVJT3Q"; // Substitua pelo seu ID do Google Tag Manager
 
 function NotFoundComponent() {
   return (
@@ -41,9 +34,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="text-xl font-semibold tracking-tight text-foreground">
-          This page didn't load
-        </h1>
+        <h1 className="text-xl font-semibold tracking-tight text-foreground">This page didn't load</h1>
         <p className="mt-2 text-sm text-muted-foreground">
           Something went wrong on our end. You can try refreshing or head back home.
         </p>
@@ -83,17 +74,33 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Isabela Unis | Psicóloga Clínica — Terapia ACT" },
       {
         property: "og:description",
-        content:
-          "Um espaço acolhedor para você se conhecer e viver de forma mais alinhada aos seus valores.",
+        content: "Um espaço acolhedor para você se conhecer e viver de forma mais alinhada aos seus valores.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "Isabela Unis | Psicóloga Clínica — Terapia ACT" },
-      { name: "description", content: "Landing page for psychologist Isabela Unis, specializing in ACT therapy, designed for mobile." },
-      { property: "og:description", content: "Landing page for psychologist Isabela Unis, specializing in ACT therapy, designed for mobile." },
-      { name: "twitter:description", content: "Landing page for psychologist Isabela Unis, specializing in ACT therapy, designed for mobile." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b56662e4-5514-489b-bd0b-9204a4f3fd0f/id-preview-a2ade9ce--104a120e-ad11-4926-8ce1-b2db04e686e0.lovable.app-1779388249257.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b56662e4-5514-489b-bd0b-9204a4f3fd0f/id-preview-a2ade9ce--104a120e-ad11-4926-8ce1-b2db04e686e0.lovable.app-1779388249257.png" },
+      {
+        name: "description",
+        content: "Landing page for psychologist Isabela Unis, specializing in ACT therapy, designed for mobile.",
+      },
+      {
+        property: "og:description",
+        content: "Landing page for psychologist Isabela Unis, specializing in ACT therapy, designed for mobile.",
+      },
+      {
+        name: "twitter:description",
+        content: "Landing page for psychologist Isabela Unis, specializing in ACT therapy, designed for mobile.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b56662e4-5514-489b-bd0b-9204a4f3fd0f/id-preview-a2ade9ce--104a120e-ad11-4926-8ce1-b2db04e686e0.lovable.app-1779388249257.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b56662e4-5514-489b-bd0b-9204a4f3fd0f/id-preview-a2ade9ce--104a120e-ad11-4926-8ce1-b2db04e686e0.lovable.app-1779388249257.png",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
