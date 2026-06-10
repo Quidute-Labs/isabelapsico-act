@@ -7,7 +7,7 @@ import { Instagram } from "@/components/landing/Instagram";
 import { Footer } from "@/components/landing/Footer";
 import { WhatsAppFab } from "@/components/landing/WhatsAppFab";
 
-const WHATSAPP_NUMBER = "5500000000000"; // substituir pelo número real
+const WHATSAPP_NUMBER = "5521984601970";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export default function App() {
